@@ -1,0 +1,9 @@
+.banner{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/spotyjaider.appspot.com/o/reikl.webp?alt=media&token=aa80b71a-18ec-4375-b059-7e69129d3ec7') ;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30%;
+}
+
+
