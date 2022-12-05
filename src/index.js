@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Menu } from './shared/Menu/Menu';
-import { Home } from './Home/Home';
+import ReactDOM from 'react-dom/client';;
+import { Rutas } from './routes/Rutas';
+import { BrowserRouter } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Menu/>
-    <Home/>
+     <BrowserRouter>
+      <Rutas/>
+    </BrowserRouter>
   </React.StrictMode>
 );

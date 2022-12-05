@@ -1,3 +1,4 @@
+import { Footer } from '../shared/Footer/Footer'
 import './Home.css'
 export function Home(){
 
@@ -40,6 +41,7 @@ export function Home(){
                     </div>
                 </div>
             </section>
+            <Footer/>
         </>
     )
 
