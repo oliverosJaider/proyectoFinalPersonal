@@ -28,6 +28,9 @@ export function Menu(){
         <li class="nav-item">
           <Link class="nav-link" to="albums">Albums</Link>
         </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="mercancia">Mercancia</Link>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
