@@ -1,0 +1,7 @@
+.fotobanner{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/spotyjaider.appspot.com/o/Reik.jpg?alt=media&token=5381a464-6748-4f49-bff1-9899573519c7');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30%;
+}

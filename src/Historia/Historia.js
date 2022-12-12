@@ -1,7 +1,11 @@
+import './Historia.css'
+
 export function Historia(){
+
+ let Titulodos="Historia"
     return(
         <>
-            <h1>HISTORIA CARGANDO...</h1>
+           <div>{Titulodos}</div>
         </>
     )
 }

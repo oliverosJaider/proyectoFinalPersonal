@@ -48,7 +48,7 @@ export function Mercancia(){
                             <>
                                  <div class="col pb-5">
                                  <div class="card h-100 shadow text-center">
-                                    <img src={producto.foto} alt="foto" class="h-100 img-fluid w-100" />
+                                    <img src={producto.foto} alt="foto" class="h-100 img-fluid w-100 p-4" />
                                     <h1>{producto.nombre}</h1>
                                     <h3>COP: {producto.precio}<i class="bi bi-currency-dollar me-4"></i>        
                                     <i class="bi bi-gift"></i></h3>
