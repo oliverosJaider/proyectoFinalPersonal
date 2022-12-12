@@ -1,6 +1,19 @@
 import { Footer } from "../shared/Footer/Footer"
+import { useNavigate } from "react-router-dom"
 
 export function Mercancia(){
+
+    //Activamos la navegacion entre componentes cuadno se de un evento
+
+    let navegacion=useNavigate()
+
+    //que hago cuando se de el evento...
+    function detectarEventos(productoSelecionado){
+        navegacion('/tienda',{
+            state:{productoSelecionado}
+        })
+        
+    }
 
     let titulo="PRODUCTOS DE LA BANDA"
 
@@ -39,24 +52,27 @@ export function Mercancia(){
 
     return(
         <>
-            <h1 class="text-center p-5">{titulo}</h1>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-5">
+            <h1 className="text-center p-5">{titulo}</h1>
+            <div className="container">
+                <div className="row row-cols-1 row-cols-md-3 g-5">
                    {
-                    productos.map(function(producto){
+                    productos.map(function(producto,id){
                         return(
-                            <>
-                                 <div class="col pb-5">
-                                 <div class="card h-100 shadow text-center">
-                                    <img src={producto.foto} alt="foto" class="h-100 img-fluid w-100 p-4" />
+                            <div key={id}>
+                                 <div className="col pb-5 h-100 p-2">
+                                 <div className="card shadow text-center h-100 p-2 ">
+                                    <img src={producto.foto} alt="foto" className="h-100 img-fluid w-100" />
                                     <h1>{producto.nombre}</h1>
-                                    <h3>COP: {producto.precio}<i class="bi bi-currency-dollar me-4"></i>        
-                                    <i class="bi bi-gift"></i></h3>
+                                    <h3>COP: {producto.precio}<i className="bi bi-currency-dollar me-4"></i>        
+                                    <i className="bi bi-gift"></i></h3>
+                                    <button className="btn btn-primary mx-3 my-3" onClick={
+                                        function(){
+                                            detectarEventos(producto)
+                                        }
+                                    }>Ampliar</button>
                                  </div>
-                                 </div>
-                                 
-                                 
-                            </>
+                                 </div> 
+                            </div>
                         )
                     })
                    }

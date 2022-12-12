@@ -26,27 +26,27 @@ export function Integrantes(){
  return(
     <>
     <section>
-        <div class="colorfondo">   
-            <div class="bannerintegrantes">
+        <div className="colorfondo">   
+            <div className="bannerintegrantes">
             </div>
         </div>
     </section>
-        <div class="container">
-                <h1 class="text-center p-5"> <i class="bi bi-star-fill"> </i> { titulo} <i class="bi bi-star-fill"></i></h1> <hr/>
-                <div class="row row-cols-1 row-cols-md-1 m-5">
+        <div className="container">
+                <h1 className="text-center p-5"> <i className="bi bi-star-fill"> </i> { titulo} <i className="bi bi-star-fill"></i></h1> <hr/>
+                <div className="row row-cols-1 row-cols-md-1 m-5">
                    {
                     integrantes.map(function(integrante){
                         return(
                             <>   
-                            <div class="card mb-3 m-5">
-                                <div class="row fotofonfo">
-                                    <div class="col-md-4 ">
-                                        <img src={integrante.post} class="rounded-start h-100 img-fluid w-100" alt="foto"/>
+                            <div className="card mb-3 m-5">
+                                <div className="row fotofonfo">
+                                    <div className="col-md-4 ">
+                                        <img src={integrante.post} className="rounded-start h-100 img-fluid w-100" alt="foto"/>
                                     </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="text-center">{integrante.nombre}</h5>
-                                            <p class="text-start m-4 ">{integrante.sipnosis}</p>
+                                    <div className="col-md-8">
+                                        <div className="card-body">
+                                            <h5 className="text-center">{integrante.nombre}</h5>
+                                            <p className="text-start m-4 ">{integrante.sipnosis}</p>
                                         </div>
                                     </div>
                                 </div>
