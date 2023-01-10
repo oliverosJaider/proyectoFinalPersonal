@@ -1,4 +1,8 @@
+import { serviciosCancionesTop } from "../services/servicioCanciones"
+
 export function Music(){
+
+    serviciosCancionesTop()
 
     return(
         <>
