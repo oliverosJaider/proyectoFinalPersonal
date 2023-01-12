@@ -60,8 +60,8 @@ export function Mercancia(){
                         return(
                             <div key={id}>
                                  <div className="col pb-5 h-100 p-2">
-                                 <div className="card shadow text-center h-100 p-2 ">
-                                    <img src={producto.foto} alt="foto" className="h-100 img-fluid w-100" />
+                                 <div className="card shadow text-center h-100 p-2">
+                                    <img src={producto.foto} alt="foto" className="h-100 img-fluid w-100 " />
                                     <h1>{producto.nombre}</h1>
                                     <h3>COP: {producto.precio}<i className="bi bi-currency-dollar me-4"></i>        
                                     <i className="bi bi-gift"></i></h3>

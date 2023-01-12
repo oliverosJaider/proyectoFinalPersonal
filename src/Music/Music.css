@@ -1,0 +1,7 @@
+.bannermusic{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/spotyjaider.appspot.com/o/space.jpg?alt=media&token=7fbca0cc-821e-4346-8195-50022a8d3018');
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 25%;
+}

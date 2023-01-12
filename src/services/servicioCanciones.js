@@ -11,7 +11,7 @@ export async function serviciosCancionesTop(){
     //configurar la peticion de envio hacia el servidor
     const PETICION={
         method:"GET",
-        headers:{Authorization:"Bearer BQAYKnEpm_hWGmuTdrFw4Yzm0kJjzoKrHb8lsvlNFYe0tjAJ8n9NgnXxzyW0ttJ3dE-gGuxlvB9c9jRhPsgWsakqg1L0yr-mXf56Ayg0ZcZIq7E4Pnwo5erT-IKrtcEVezl-RNDW1hhtiLGjQBeRdK0puVAa5i4_G7ZB9cNUK51cs4PgeplnY-husMYZezU_1f0"}
+        headers:{Authorization:"Bearer BQBmYPYkKRrkWaSwAQLeF2T6nvnBy5UVPIkLGpuuczSWwAxM8pSvkB7MmMHGe-I7WrgtI6h5sMw58ANbvkUEGNWAoRwMRAUovGy7e6QezEnvlZMMGAADR4ETHKfjK_tiDzOU_1I4FUI95bMXkiHWonFsxPImMrlzq397-zP4xv0DkxYOWVKvxfiAQ5FB9WyabCU"}
 }
     //3. NOS VAMOS AL RESTAURANTE
     //CONSUMIMOS EL API
@@ -19,5 +19,5 @@ export async function serviciosCancionesTop(){
     let respuesta=await fetch(URL, PETICION)
     let canciones=await respuesta.json()
     
-    console.log(canciones)
+    return(canciones)
 }
