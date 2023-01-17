@@ -1,4 +1,5 @@
 import {serviciosCancionesTop} from '../services/servicioCanciones.js'
+import { Footer } from '../shared/Footer/Footer.js'
 import {useState, useEffect} from'react'
 import './Music.css'
 
@@ -29,16 +30,16 @@ export function Music(){
 
         return(
             <>
-                <h2 className='text-center p-3'>canciones de la banda:</h2>
-                <div className="container bannermusic">
-                    <div className="row row-cols-1 row-cols-md-3 m-2">
+                <h2 className='text-center p-3 fs-1'>CANCIONES DE LA BANDA:</h2>
+                <div className="container">
+                    <div className="row row-cols-1 row-cols-md-3 m-2 ">
                 {
                     canciones.tracks.map(function(cancion){
                         return(
                             <div className="col pb-5 text-center h-100  ">
-                                 <div className="card shadow  h-100 p-5 ">
+                                 <div className="card shadow  h-100 p-5 bannermusic">
                                     <img src={cancion.album.images[0].url} alt="" className="h-100 img-fluid w-100 "/>
-                                    <h1>{cancion.name}</h1>
+                                    <h1 className='text-white fs-5 mt-3 mb-3'>{cancion.name}</h1>
                                     <audio controls src={cancion.preview_url}></audio>
                                 </div>
                             </div>
@@ -49,6 +50,7 @@ export function Music(){
                 }
                      </div>
                 </div>
+                <Footer/>
             </>
         )
 

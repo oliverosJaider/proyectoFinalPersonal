@@ -12,13 +12,11 @@ export function Footer(){
                     </div>
                     <div className="col-12 col-md-4 text-center p-5 align-self-center">
                         <h2 className="fw-bold">SOBRE LA BANDA</h2>
-                        <h4 className="">banda de rock anternativo</h4>
+                        <h4 className="">Reik (2003) un grupo de jóvenes mexicanos conformaron esta agrupación musical pop. </h4>
                         <br/>
-                        <h2 className="fw-bold">SOBRE LA BANDA</h2>
-                        <h4 className="">banda de rock anternativo</h4>
                     </div>
                     <div className="col-12 col-md-4 p-5 align-self-center">
-                    <i className="bi bi-instagram fuente me-3"></i>
+                    <i className="bi bi-instagram fuente me-3 "  ></i>
                     <i className="bi bi-twitter fuente me-3"></i>
                     <i className="bi bi-facebook fuente"></i>
                     </div>

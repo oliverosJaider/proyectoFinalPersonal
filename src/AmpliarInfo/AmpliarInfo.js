@@ -26,6 +26,18 @@
                         <br/>
                         <i class="bi bi-truck mt-5 fs-1 text-success"> <span className='fs-6 fw-bold'>  Envio gratis a nivel Nacional</span></i>
                         <p>Conoce los tiempos y las formas de envio</p>
+                        
+                        <i class="bi bi-arrow-clockwise mt-5 fs-1 text-success"> <span className='fs-6 fw-bold'> Devolucion gratis</span></i>
+                        <p>30 dias para reembolso</p>
+                        <hr/>
+                        <h2>Descripcion</h2>
+                        <ul>
+                           <li>
+                                {producto.Descripcion}
+                           </li>
+                           
+                        
+                        </ul>
                     </div>
                 </div>
             </div>

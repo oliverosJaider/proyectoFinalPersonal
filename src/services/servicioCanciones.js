@@ -1,6 +1,8 @@
 //receta para consumir un appi con react
-
+import { generarToken } from "./servicioToken"
 export async function serviciosCancionesTop(){
+
+    let token=await generarToken()
 
 
     //1. pa onde vas Y a que vas 
@@ -11,7 +13,7 @@ export async function serviciosCancionesTop(){
     //configurar la peticion de envio hacia el servidor
     const PETICION={
         method:"GET",
-        headers:{Authorization:"Bearer BQBmYPYkKRrkWaSwAQLeF2T6nvnBy5UVPIkLGpuuczSWwAxM8pSvkB7MmMHGe-I7WrgtI6h5sMw58ANbvkUEGNWAoRwMRAUovGy7e6QezEnvlZMMGAADR4ETHKfjK_tiDzOU_1I4FUI95bMXkiHWonFsxPImMrlzq397-zP4xv0DkxYOWVKvxfiAQ5FB9WyabCU"}
+        headers:{Authorization:token}
 }
     //3. NOS VAMOS AL RESTAURANTE
     //CONSUMIMOS EL API
