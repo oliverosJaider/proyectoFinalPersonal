@@ -72,10 +72,10 @@ export function Home(){
                 </div>
             </section>
             <section>
-                <div className="container-fluid">
+                <div className="container-fluid h-50">
                     <div className="row">
                         <div className="col-12">
-                            <h1>NOTICIAS</h1>
+                            <h1 className='text-center'>NOTICIAS</h1>
                             <hr/>
                         </div>
                     </div>
